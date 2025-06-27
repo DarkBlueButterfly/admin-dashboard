@@ -15,7 +15,7 @@ input {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .sidebar {
@@ -55,43 +55,65 @@ input[type="search"] {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 10px;
+    grid-template-rows: 50px repeat(2, 2fr);
+    /* gap: 10px; */
 }
 
 .projects {
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px repeat(3, 160px);
-    gap: 10px;
+    grid-template-rows: 50px repeat(3, 250px);
+    gap: 15px;
+    margin: 15px;
 }
 
 .projects > p {
     grid-column: 1 / 3;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .card {
     background-color: white;
     border-radius: 15px;
     border-left: 10px solid orange;
+    padding: 15px;
 }
 
 .announce {
     display: grid;
     grid-template-rows: 50px;
+    margin: 15px;
 }
 
-.announce > div {
+.announced {
     background-color: white;
+    /* padding: 20px; */
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+}
 
+.announced div {
+    padding: 20px;
+}
+
+.announced div:not(:first-child) {
+    border-top: 2px solid lightgray;
 }
 
 .trending {
+    grid-row: 3;
     display: grid;
     grid-template-rows: 50px;
+    margin: 15px;
+
 }
 
 .trends {
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 15px;
+    align-items: center;
+    justify-items: center;
 }
