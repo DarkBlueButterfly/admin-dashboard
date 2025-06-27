@@ -6,6 +6,7 @@
 }
 
 #container {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     text-align: center;
@@ -21,3 +22,12 @@
 /* input[type="search"] {
     
 } */
+
+.header {
+
+    grid-row: 1 / 2;
+}
+
+.main {
+    grid-row: 2 / 3;
+}
