@@ -70,11 +70,62 @@ input[type="search"] {
 .header-top {
     display: grid;
     grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-left,
+.top-right {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.top-right {
+    gap: 15px;
+}
+
+.top-left button{
+    background-color: white;
+    border: none;
+    margin-right: 15px;
 }
 
 .header-bottom {
     display: grid;
     grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    margin: 25px 0;
+}
+
+.header-bottom > img {
+    justify-self: right;
+}
+
+.greeting {
+    justify-self: left;
+}
+
+.header-bottom button {
+    font-size: 1.25rem;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+}
+
+.header-bottom button:hover {
+    background-color: blueviolet;
+}
+
+.header-bottom button:nth-child(odd) {
+    justify-self: right;
+}
+
+.header-bottom button:last-child {
+    justify-self: left;
 }
 
 .main {
